@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(-45deg, #01012b 50%, #01011b 50%);
+    background-attachment: fixed;
+    font-family: 'Ubuntu Mono', monospace !important;
+}
+
+.bgImg {
+    /* background-image: url("img/default/graphy-dark.png"); */
+    background-image: url("img/default/grid-me.png");
+    /* background-attachment: fixed; */
+}
+
+.navcusbgcol {
+    transition: 0.3s;
+    background-color: #ff2a6d;
+}
+
+.navcuscol {
+    color: #d1f7ff !important;
+    text-shadow: -1px -1px 5px #d1f7ff, 1px 1px 3px #005678 !important;
+    transition: 0.5s;
+}
+
+.navcuscol:hover {
+    transform: rotate(-7deg);
+    border-radius: 30%;
+    font-size: 18px;
+    text-shadow: -1px -1px 5px #ff0000, 1px 1px 3px #d30808 !important;
+    box-shadow: -1px -1px 40px #d1f7ff !important;
+    transition: 0.2s;
+}
+
+.dropdown:hover .dropdownContent {
+    visibility: visible;
+    clip-path: inset(0 0 0 0);
+    transition: 0.5s;
+}
+
+.dropdownContent {
+    z-index: 7;
+    clip-path: inset(0 0 200px 0);
+    position: absolute;
+    width: 200px;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-shadow: -1px -1px 5px #d1f7ff, 1px 1px 3px #005678 !important;
+    background: linear-gradient(transparent -0%, #005678 100%);
+    border-radius: 10px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.dropdownContent li {
+    margin: 10px 0 !important;
+}
+.dropdownContent a {
+    color: #d1f7ff !important;
+}
+.dropdownContent a:hover {
+    text-decoration: none;
+    color: #e4caca !important;
+    text-shadow: -1px -1px 5px #ff0000, 1px 1px 3px #d30808 !important;
+}
+
+#bgSoundOff {
+    color: #d1f7ff !important;
+    text-shadow: -1px -1px 5px #ff0000, 1px 1px 3px #d30808 !important;
+    opacity: 0.8;
+    transform: rotate(6deg);
+    transition: 0.5s;
+}
+#bgSoundOff:hover {
+    opacity: 1;
+    transform: rotate(-360deg);
+    transition: 0.5s;
+}
+
+#bgSoundOn {
+    color: #d1f7ff !important;
+    text-shadow: -1px -1px 5px #d1f7ff, 1px 1px 3px #005678 !important;
+    transform: rotate(0deg);
+}
+#bgSoundOn:hover {
+    color: #d1f7ff !important;
+    text-shadow: -1px -1px 8px #d1f7ff, 1px 1px 6px #d1f7ff !important;
+}
+
+#resetTotalItemPrice {
+    opacity: 0.8;
+}
+#resetTotalItemPrice:hover {
+    opacity: 1;
+    text-shadow: -1px -1px 8px #d1f7ff, 1px 1px 6px #d1f7ff !important;
+
+}
+
+.idrformidr {
+    color: #d1f7ff !important;
+    text-shadow: -1px -1px 5px #d1f7ff, 1px 1px 3px #005678 !important;
+    background-color: transparent !important;
+    border-width: 0 0 1px 0 !important;
+    border-radius: 0 !important;
+}
+
+.idrforminput {
+    color: #d1f7ff !important;
+    text-shadow: -1px -1px 5px #d1f7ff, 1px 1px 3px #eeff00 !important;
+    background-color: transparent !important;
+    border-width: 0 0 1px 0 !important;
+    border-radius: 0 !important;
+}
+
+.cartnav {
+    text-shadow: 0 0 10px #eeff00 !important;
+}
+
+.cartnav:hover {
+    transform: rotate(-10deg);
+    text-shadow: -1px -1px 20px #d1f7ff !important;
+    box-shadow: none !important;
+}
+
+.sticky {
+    z-index: 5;
+    position: sticky !important;
+    top: 0;
+}
+
+.totop {
+    z-index: 10;
+    background-color: #d1f7ff;
+    color: #ff2a6d;
+    box-shadow: 0 0 20px #000000;
+    border-radius: 50%;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 55px;
+    right: 20px;
+    transition: 0.2s;
+}
+
+.totop:hover {
+    background-color: #ff2a6d;
+    color: #ffffff;
+    text-shadow: -1px -1px 8px #d1f7ff, 1px 1px 5px #05d9e8;
+    box-shadow: 0 0 20px #d1f7ff;
+    transition: 0.2s;
+}
+
+.storename {
+    position: relative;
+    bottom: 120px;
+    font-family: 'Lora', serif   !important;
+    font-size: 70px;
+    text-shadow: -1px -1px 15px #ff2a6d, 1px 1px 15px #ff2a6d;
+}
+
+.tagline {
+    position: relative;
+    bottom: 120px;
+    font-weight: 400;
+    font-size: 18px;
+    text-shadow: -1px -1px 8px #c300ff, 1px 1px 8px #ea00ff;
+}
+
+.recom {
+    position: relative;
+    bottom: 47px;
+    text-shadow: 0 0 10px #ff2a6d;
+    font-size: 20px;
+}
+
+.recom a {
+    text-decoration: underline;
+    color: #d1f7ff;
+    text-shadow: 0 0 10px #05d9e8;
+}
+
+.recom a:hover {
+    text-decoration: underline;
+    color: #d1f7ff !important;
+    text-shadow: 0 0 15px #05d9e8 !important;
+}
+
+.recomjs {
+    text-decoration: underline;
+    color: #f5f5e9 !important;
+    text-shadow: 0 0 15px #d9e805 !important;
+}
+
+.rotate {
+    position: relative;
+    top: 35px;
+    transform: rotate(-1deg);
+}
+
+.carpaddingleftright {
+     padding: 0 80px !important; 
+}
+
+.carborder {
+    padding: 8px;
+    margin: 20px 0 20px 0;
+    border: 1px solid #ff2a6d;
+    border-radius: 40% 15% 30% 15%;
+    box-shadow: 0 0 20px #ff2a6d;
+}
+
+.carimgcustom {
+    border-radius: 38% 18% 38% 18%;
+    /* opacity: 0.9; */
+}
+
+
+.catTitle {
+    margin: 40px 0 40px 0;
+    color: #d1f7ff;
+    text-shadow: -1px -1px 10px #d8bed0, 1px 1px 3px #005678;
+}
+
+.catTitle:hover {
+    text-shadow: 0 0 10px #ffe600;
+}
+
+.chevron {
+    cursor: pointer;
+}
+
+.cardtextcust {
+    margin: 0 5px 0px !important;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.nameclick {
+    font-size: 40px;
+}
+
+.cardcustom {
+    width: 16rem !important; 
+    float: left !important; 
+    margin: 0px 10px 30px 10px !important;
+    border: 2px solid  #ff2a6d !important;
+    border-top: 8px solid  #ff2a6d !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.cardclickcustom {
+    width: 50rem !important; 
+    float: left !important; 
+    margin: 0px 10px 10px 10px !important;
+    border: 2px solid  #ff2a6d !important;
+    border-top: 5px solid  #ff2a6d !important;
+    border-right: 15px solid  #ff2a6d !important;
+    border-radius: 0 !important;
+    background-color: #01012bcc;
+    color: #d1f7ff;
+    text-shadow: -1px -1px 3px #05d9e8, 2px 2px 3px #005678 ;
+    /* box-shadow: -20px -20px 300px #d1f7ff, 25px 25px 300px #005678 ; */
+    /* box-shadow: -5px -5px 10px #ff2a6d, 5px 5px 10px #ff0000 ; */
+}
+
+.aboutclickcustom {
+    width: 50rem !important;
+    margin: 40px 10px 0 !important;
+    border: 2px solid  #ff2a6d !important;
+    border-top: 5px solid  #ff2a6d !important;
+    border-right: 20px solid  #ff2a6d !important;
+    border-radius: 0 !important;
+    background-color: #01012bcc;
+    color: #d1f7ff;
+    text-shadow: -1px -1px 3px #05d9e8, 2px 2px 3px #005678 ;
+    /* box-shadow: -20px -20px 300px #ff2a6d, 25px 25px 300px #ff0000 ; */
+    box-shadow: 20px 20px 50px #005678, -20px -20px 50px #ff0000c0;
+}
+
+.cardclickcustbtn {
+    margin: 2%;
+    width: 96% !important;
+    height: 10% !important;
+}
+
+.cardimgcust {
+    border: 1px solid #d1f7ff;
+}
+
+.cardimgclickcust {
+    border: 1px solid #d1f7ff;
+    width: 46%;
+    float: left;
+    margin: 2% 0 2% 2%;
+}
+
+.cardglow {
+    transition: 0.4s;
+    box-shadow: 0 0 5px #ff2a6d;
+}
+.cardglow:hover {
+    transition: 0.2s;
+    box-shadow: 0 0 30px #ff2a6d;
+}
+
+.cardclick {
+    visibility: hidden;
+    transform: translateY(600px);
+}
+
+.aboutclick {
+    visibility: hidden;
+    transform: translateY(-600px);
+}
+
+.pricecustglow {
+    text-shadow: -2px -2px 7px #40c227, 4px 4px 7px #1fd85d ;
+}
+
+.qty {
+    margin: 0;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #d1f7ff;
+    text-shadow: -1px -1px 3px #05d9e8, 2px 2px 3px #005678 ;
+}
+
+.plusminus {
+    padding: 0 10px;
+    text-shadow: none;
+    cursor: pointer;
+}
+.plusminus:hover {
+    text-shadow: -2px -2px 7px #05d9e8, 4px 4px 7px #ff2a6d ;
+}
+
+#closecard {
+    float: right !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 2px 8px !important;
+    font-size: 20px;
+    cursor: pointer !important;
+}
+#closecard:hover {
+    text-shadow: -1px -1px 5px #fbff00, 1px 1px 5px #d1f7ff;
+}
+
+#closeabout {
+    float: right !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 2px 8px !important;
+    font-size: 20px;
+    cursor: pointer !important;
+}
+#closeabout:hover {
+    text-shadow: -1px -1px 5px #fbff00, 1px 1px 5px #d1f7ff;
+}
+
+
+.footer {
+    padding: 20px 20px 5px;
+    margin-top: 10%;
+    font-size: 14px;
+    color: #d1f7ff;
+    background-color: #ff2a6d;
+}
